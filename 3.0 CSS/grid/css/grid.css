@@ -1,0 +1,40 @@
+#layout{
+    /*make the container a grid element*/
+    display: grid;
+    /*define rows*/
+    grid-template-rows:100px auto 50px;
+    /*define columns*/
+    /*@TODO: what is fr?*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*define areas*/
+    grid-template-areas: 
+    "hd hd hd"
+    "sb1 cnt sb2 "
+    "ft ft ft";
+}
+div{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+#one{
+    grid-area: hd;/*assigning an element to grid area*/
+    background-color: darkolivegreen;
+}
+#two{
+    grid-area: sb1;
+    background-color: blue;
+}
+#three{
+    grid-area: cnt;
+    background-color:darkorange;
+    height: 500px;
+}
+#four{
+    grid-area: sb2;
+    background-color:limegreen;
+}
+#five{
+    grid-area: ft;
+    background-color:orchid;
+}

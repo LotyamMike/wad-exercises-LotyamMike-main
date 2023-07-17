@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Challenge</title>
+    <style>
+          body{
+            background-color:background-color: #FFFFFF;
+      background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 33%, #FF0000 66%, #ffffff 100%);
+       ;
+          } h1{
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          border-radius: 5px red;
+
+          }p{
+            font-family:Arial, Helvetica, sans-serif;
+            color: rebeccapurple;
+          }
+    </style>
+  </head>
+  <body>
+    <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+    <p>
+      Our 12'' wood fired pizzas are available for delivery. Build your custom
+      pizza and we'll deliver it within an hour.
+    </p>
+
+    <!-- @TODO : Your code starts here -->
+    <!--Action : where do you send the form/data-->
+    <!--method : how do you send the form/data -->
+    <form action="process.php" method="post" id="frmPizza" name="frmPizza">
+      <!-- @TODO :What does this tag (fieldset) do?-->
+      <fieldset>
+        <!-- @TODO :What does this tag (legend) do?-->
+        <legend>Your Information</legend>
+        <!--customer name-->
+        <div>
+          <label for="cname">Name</label>
+          <input required type="text" id="cname" name="cname" />
+        </div>
+        <!--Address-->
+        <div>
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" />
+        </div>
+        <!--phone-->
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <!--Email-->
+        <div>
+          <label for="email_addr">Email</label>
+          <input type="email" id="email" name="email_addr" />
+        </div>
+      </fieldset>
+      <br />
+      <div>
+        <h2>Delivery Instructions</h2>
+        <textarea
+          name="Instructions"
+          id="Instructions"
+          rows="8"
+          cols="80"
+          maxlength="400"
+          placeholder="No more than 400 characters long"
+        >
+        </textarea>
+      </div>
+      <br />
+      <div>
+        <h2>Design your Pizza</h2>
+        <fieldset>
+          <legend>Pizza specs</legend>
+          <!--Crust-->
+          <div>
+            <p>Crust (choose one) :</p>
+            <input
+              type="radio"
+              name="crust"
+              id="rd-classic-white"
+              value="Classic white"
+            />Classic white
+            <input
+              type="radio"
+              name="crust"
+              id="rd-multigrain"
+              value="Multigrain"
+            />Multigrain
+            <input
+              type="radio"
+              name="crust"
+              id="rd-cheese-stuffed"
+              value="cheese-stuffed"
+            />Cheese-stuffed
+            <input
+              type="radio"
+              name="crust"
+              id="rd-glutten-free"
+              value="Gluten-free"
+            />Gluten-free
+          </div>
+          <div>
+            <p>Topping (choose as many as you want) :</p>
+            <input type="checkbox" name="topping[]" value="Red Sauce" />Red
+            Sauce
+            <input type="checkbox" name="topping[]" value="White Sauce" />White
+            Sauce
+            <input
+              type="checkbox"
+              name="topping[]"
+              value="Mozarella Cheese"
+            />Mozarella Cheese
+            <input
+              type="checkbox"
+              name="topping[]"
+              value="Pepperoni"
+            />Pepperoni
+            <input type="checkbox" name="topping[]" value="peppers" />peppers
+            <input
+              type="checkbox"
+              name="topping[]"
+              value="Anchovies"
+            />Anchovies
+          </div>
+          <p>Number :</p>
+          <div>
+            <label for="p_number"> How many pizzas :</label>
+            <select id="p_number" name="p_number">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+        </fieldset>
+        <br />
+        <div>
+          <input
+            type="submit"
+            name="submit"
+            value="submit"
+          /><!--Sends the form-->
+          <input
+            type="reset"
+            name="reset"
+            value="Reset"
+          /><!--Clears the entire form-->
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

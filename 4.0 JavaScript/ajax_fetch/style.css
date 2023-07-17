@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Satisfy&display=swap');
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 35%, #ffa500 71%);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-weight: normal;
+  font-size: 60px;
+  margin: 0;
+}
+
+h1 img{
+  width : 5%;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 97%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 35%, #ffa500 71%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffa500;
+  background-image: linear-gradient(62deg, #ffa500 28%, #8EC5FC 74%);
+
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+#recipeContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.recipe {
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.recipe img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.recipe p {
+  font-size: 14px;
+  margin: 0;
+}
+
+footer{
+  color:gray;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer img{
+  width : 0.8%;
+}

@@ -1,0 +1,52 @@
+/*
+Adding a custom font(IBM Plex..)
+*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/element selector/
+/*<body>::body
+<p>::p
+<table>::table
+*/
+body{
+    font-family:'IBM Plex Sans', sans-serif;
+}
+
+h1{
+ font-style: italic;
+ color: green !important;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: orange;
+
+/*
+[shorthand]
+border-bottom : 1px solid orange;
+*/
+}
+p{
+   font-size:large; 
+   margin-left: 100px;  
+}
+h2{
+    margin-left: 100px;
+    font-size: italic;
+    color: orange;
+}
+/*id selector(#idname)*/
+/*@TODO : align the title to the center*/
+#main-heading{
+  width: 20%;
+  margin-bottom: 5px;
+}
+/*class selector(.className)*/
+.salad{
+    float: right;
+    margin:0 0 12px 0;/*[Shorthand] TRouBLe*/
+    width: 19%;
+    /* [Longhand]
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
+    */
+}

@@ -1,0 +1,3 @@
+## Aim 🏹
+
+- Introduction to CSS

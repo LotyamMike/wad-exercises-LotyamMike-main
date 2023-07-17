@@ -1,0 +1,117 @@
+/*======*/
+Fonts
+1. Rubik and Karla from fonts.google.com
+/*=======*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face{
+  font-family: 'satisfy';
+  src: url(fonts/Satisfy/Satisfy-Regular.ttf);
+}
+/*======*/
+Global Styles
+/*=======*/  
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Karla',sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+#container{
+  display: grid;
+  grid-template-rows: 75px auto 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "hd hd hd"
+  "cnt cnt cnt"
+  "ft ft ft"
+  ;
+}
+/======
+ Header styles
+**/
+header{
+  grid-area: hd;
+  background: radial-gradient(circle,rgba(116,60,37,1)
+  35%,rgba(255,255,255,1)100%);
+  color: white;
+  min-height: 1em;/*@TODO: min-height & em?*/
+  border-bottom: 3px solid #006838;
+}
+#menu{
+  display: flex;
+  align-items:center ;/applies to the cross axis/
+  margin: 0;
+  list-style: none;
+  font-family: 'Rubik',sans-serif;
+  font-weight: 500;
+}
+#logo{
+  font-family: 'satisfy',cursive;
+  margin-right: auto;
+}
+#logo-image{
+  padding-top: 10px;
+  width: 50px;
+}
+h1{
+  display: inline;
+  font-weight: normal;
+  font-size: 1.7rem;/*@TODO: rem vs em?*/
+
+}
+a{
+  display: block;
+  background-color: #6a4a24;
+  color: white;
+  border-radius: .5em;
+  padding-top: .5em;
+  padding-bottom: 1em;/@TODO: in one line for top/bottom/
+  text-decoration: none;
+  margin: .5em;
+  border-bottom: 3px solid black;
+  color:#d4854d;
+}
+#menu a:hover{
+  border-bottom: 3px solid black;
+color: #d4854d;
+
+}#menu .active a {
+  border-bottom: 3px solid rgb(76, 75, 75);
+  color: #f5a871;
+
+}main {
+  grid-area: cnt;
+  margin: 0 50px;
+
+  
+
+}#showcase {
+  margin-top: 50px;
+  min-height: 400px;
+  background-image: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}#boxes {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+.box img {
+padding-top: 20px;
+
+}footer {
+grid-area: ft;
+margin: 0;
+padding: 0;
+color: #0b0b0b;
+background-color: #743c25;
+text-align: center;
+}

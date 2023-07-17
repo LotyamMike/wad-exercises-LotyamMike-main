@@ -1,0 +1,45 @@
+/*make the main element a flexbox*/
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 10px solid salmon;
+}
+/*element selector*/
+div{
+    width: 100px;
+    height: 50px;
+    color:white;
+    font-size: 16px;
+    text-align: center;
+}
+#one{
+    background-color: blue;
+}
+#two{
+    background-color: aquamarine;
+}
+#three{
+    background-color:brown;
+}
+#four{
+    background-color: blueviolet;
+}
+#five{
+    background-color:darkgoldenrod;
+}
+#six{
+    background-color:chartreuse;
+}
+#seven{
+    background-color:darkgreen;
+}
+#eight{
+    background-color:gold;
+}
+#nine{
+    background-color:darkblue;
+}
+#ten{
+    background-color:gray;
+}

@@ -1,0 +1,87 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header,footer{
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+.sidebar{
+  font-family: 'Bad Script', cursive;
+}
+
+.card-panel,.styled-title{
+  font-family: 'Bad Script', cursive;
+  font-size : 16px !important;
+  font-weight: bolder;
+}
+
+
+.msg{
+  font-size: 18px;
+}
+
+/*
+Style scrollbar
+@Source : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar
+*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8e24aa;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #90caf9;
+}
+
+/*Circular badge
+*@https://stackoverflow.com/questions/50179149/how-to-force-a-badge-to-always-be-a-circle
+*
+*/
+
+.notification-icon--fixed {
+  position: relative;
+  color: #fff;
+  border-radius: 50%;
+  font-family: "Roboto";
+
+  /* Alignment */
+  line-height: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Adjust as required: */
+  padding: 10px;
+}
+
+/* Height = width */
+.notification-icon--fixed::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}

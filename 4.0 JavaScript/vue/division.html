@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Division Calc (VueJS)</title>
+
+    <!-- Boostrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- font awesome toolkit -->
+    <script src="https://kit.fontawesome.com/081f7e209f.js" crossorigin="anonymous"></script>
+    <style media="screen">
+
+    </style>
+    <!-- embedded -->
+    <script type="text/javascript">
+      //embedded
+    </script>
+
+
+
+  </head>
+  <body>
+
+    <div class="container" id='app'>
+
+      <div class="row mt-2">
+
+        <div class="col-md-8">
+
+          <div class="alert alert-primary" role="alert">
+            Division Inputs <i class="fas fa-keyboard"></i>
+          </div>
+
+          <!-- <form> -->
+            <div class="form-group">
+              <label for="fnumber">First Number</label>
+              <input v-model="fnumber" type="number" class="form-control" id="fnumber" name="fnumber" >
+              <span v-if="fnumber_error" id="fnumber_error" style="color:red;">{{fnumber_error}}</span>
+            </div>
+
+            <div class="form-group">
+              <label for="snumber">Second Number</label>
+              <input v-model="snumber" type="number" class="form-control" id="snumber" name="snumber">
+              <span v-if="snumber_error" id="snumber_error" style="color:red;">{{snumber_error}}</span>
+            </div>
+
+            <button type="submit" v-on:click="divideThem" class="btn btn-primary" id="calc" >  Calculate <i class="fas fa-divide"></i></button>
+          <!-- </form> -->
+
+        </div>
+
+        <div class="col-md-4">
+
+          <div class="alert alert-success" role="alert">
+            <i class="fas fa-terminal"></i> Results
+          </div>
+
+          <h4 id='results'>{{dresult}}</h4>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- external script file -->
+    <script src="division.js" charset="utf-8"></script>
+
+  </body>
+</html>

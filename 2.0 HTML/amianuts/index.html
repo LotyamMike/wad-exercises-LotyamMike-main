@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Amia Nuts</title>
+
+    <!-- As it is a void element(it is an empty element), it has no content
+    the start tag must be present and the end tag must not be present. -->
+    <meta charset="utf-8" />
+    <meta name="description" content="A nut company page" />
+    <!--author-->
+    \
+    <meta name="author" content="Lotyam" />
+    <!--copyright-->
+    <meta name="copyright" content="Strathmore University" />
+    <!--viewpoint-->
+    <meta name="viewpoint" content="width=device.width,initial.scale=1.0" />
+    <!--
+
+    @TODO : See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta and add 2 more
+    relevant meta tags
+
+    -->
+    <!--attaching various resources-->
+    <!--link tag:favicon.external styles-->
+    <!--relative/absolute path for href attribute-->
+    <link rel="shortcut icon" href="images/favicon.png" type="images/png" />
+    <!--styles-->
+    <style>
+      /*background color change*/
+      body {
+        background: rgb(63, 94, 251);
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(252, 70, 107, 1) 100%
+        );
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        border-radius: 40cm;
+        border: 5px;
+        width: 50%;
+        color: white;
+        background-color: black;
+        position: relative;
+        animation: companys 5s;
+      }
+      @keyframes companys {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 200px;
+        }
+      }
+      h3 {
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      p {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <!--6. Body tag:page content:what is visible-->
+  <body>
+    <!--a heading one element ; h1,h2h3...h6 .. content titles -->
+    <h1>
+      <!--link macadamia.png in the images folder-->
+      <img src="images/macadamia.png" alt="logo" />
+    </h1>
+    <br />
+    <h2>Amia Nuts</h2>
+
+    <!--a heading two element-->
+    <h3>The company</h3>
+    <p>
+      <em>Amia nuts </em>are native to the Amazon rainforest and are a good
+      source of protein, healthy fats, and minerals such as magnesium,
+      phosphorus, and zinc. Amia nuts are often used as a snack or added to
+      dishes such as salads, trail mixes, and desserts. However, it's worth
+      noting that some people may have allergies to amia nuts, so it's important
+      to be aware of this if you or anyone you know is planning to
+      <b>consume them</b>.
+    </p>
+    <h4>Our Speciality</h4>
+    <!--An unordered list-->
+    <ul>
+      <li>Roasted nuts</li>
+      <li>Honey coated nuts</li>
+      <li>Olive oil fried nuts</li>
+      <li>Baked nuts</li>
+      <li>Caramelized nuts</li>
+      <li>Spicy nuts</li>
+    </ul>
+    <h5>Distribution Centres</h5>
+    <!--ordered list-->
+    <ol>
+      <li>Karuga, Laikipia County</li>
+      <li>Runyenjes,Embu County</li>
+    </ol>
+    <h3>Our Location</h3>
+    <!--anchor tag-->
+    <a
+      href="https://www.google.com/maps/place/Makongeni,+Nairobi/@-1.2974935,36.845355,16z/data=!3m1!4b1!4m6!3m5!1s0x182f116bbfa26cf9:0xde30df06e7c5c97!8m2!3d-1.2976047!4d36.8505924!16s%2Fm%2F0crh_g8"
+      target="blank"
+    >
+      Thika Town<br />
+      Kiambu County
+    </a>
+  </body>
+</html>
